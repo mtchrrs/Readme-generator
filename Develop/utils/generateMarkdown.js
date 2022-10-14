@@ -122,7 +122,7 @@ function generateMarkdown(data) {
 
   To conduct a test on this application, please follow the following process carefully.
 
-  ${data.test}
+  ${data.tests}
 
 
   ## Questions
