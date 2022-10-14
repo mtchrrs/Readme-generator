@@ -35,7 +35,7 @@ function renderLicenseBadge(license) {
   }
 
   if(license){
-    badge = `[![License: ${license}](https://img.shields.io/badge/License-${code}-informational)](https://opensource.org/licenses/${code})`;
+    badge = `[![License: ${license}](https://img.shields.io/badge/License-${code}-informational.svg)](https://opensource.org/licenses/${code})`;
   } else {
     badge = "";
   }
@@ -62,10 +62,9 @@ function renderLicenseSection(license) {
 
   if (license) {
     return `
-    ${link}
+  ${badge}
 
-    ${badge}
-    `
+  ${link}`
   } else {
     return "";
   }
@@ -88,7 +87,7 @@ function generateMarkdown(data) {
   * [Description](#description)
   * [Installation Instructions](#installation)
   * [Usage Instructions](#usage)
-  * [Contribution Guide](#contribution)
+  * [Contribution Guide](#contributions)
   * [Tests](#tests)
   * [Questions](#questions)
   
@@ -98,25 +97,25 @@ function generateMarkdown(data) {
   ${data.description}
 
 
-  ## Installation Guide
+  ## Installation
 
   To install or use this application, please follow the following process carefully.
 
-  ${data.install}
+  ${data.installInstructions}
 
 
-  ## Usage Instructions
+  ## Usage
   
   To use this application, please follow the following process carefully.
 
-  ${data.use}
+  ${data.usageInstructions}
 
 
-  ## Contribution Guide
+  ## Contributions
   
   To contribute to this application, please follow the following process carefully.
 
-  ${data.contrubutions}
+  ${data.contributionsGuide}
   
 
   ## Tests 
@@ -130,7 +129,7 @@ function generateMarkdown(data) {
 
   To ask any questions about this application, please follow the link to my GitHub, send me an email, or follow the links on my portfolio.
   
-  * https://github.com/${data.github}
+  * https://github.com/${data.githubUsername}
   * ${data.email}
   * ${data.userportfolio}
   `;

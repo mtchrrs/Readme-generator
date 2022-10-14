@@ -18,18 +18,18 @@ const questions = [
         },
         {
             type: "input",
-            name: "install",
+            name: "installInstructions",
             message: "README Install Instructions ",
             default: "npm install"
         },
         {
             type: "input",
-            name: "use",
+            name: "usageInstructions",
             message: "README Usage Instructions ",
         },
         {
             type: "input",
-            name: "contributions",
+            name: "contributionsGuide",
             message: "README Contributions Guide ",
         },
         {
@@ -39,7 +39,7 @@ const questions = [
         },
         {
             type: "input",
-            name: "github",
+            name: "githubUsername",
             message: "README Github Username ",
         },
         {
