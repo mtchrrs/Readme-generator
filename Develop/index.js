@@ -60,8 +60,8 @@ const questions = [
                 "Apache-2.0",
                 "BSD-3-Clause",
                 "BSD-2-Clause",
-                "GPL",
-                "LGPL",
+                "gpl-license",
+                "lgpl-license",
                 "MIT",
                 "MPL-2.0",
                 "CDDL-1.0",
@@ -75,7 +75,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(filename, data, (err) => {
+    fs.writeFile(fileName, data, (err) => {
         if (err) {
             console.log("error writing and creating README.md file");
         }
